@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form
+        {
+            background-color: rgba(23, 3, 4, 0.159);
+            border: 3px solid black;
+            margin: 10px;
+        }
+        #submit
+        {
+            background-color: blue;
+            height: 40px;
+            width: 90px;
+            margin: 0.7rem;
+            border: none;
+            border-radius: 1rem;
+            color: white;
+            font-size: medium;
+        }
+        #submit:hover
+        {
+            background-color: rgba(0, 0, 255, 0.756);
+            
+        }
+        #reset
+        {
+            background-color: blue;
+            height: 40px;
+            width: 90px;
+            margin: 0.7rem;
+            border: none;
+            border-radius: 1rem;
+            color: white;
+            font-size: medium;
+        }
+        #reset:hover
+        {
+            background-color: rgba(0, 0, 255, 0.756);
+           
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <h2>Complex Form</h2>
+        <fieldset> 
+            <legend> Personal Information</legend>
+
+            <lebal for="name1">Name:</lebal>
+            <input type="text" name="name"id ="name1">
+
+            <lebal for="email">E-mail:</lebal>
+            <input type="email" name="email"id ="email" required>
+
+            <lebal for="telephone">MO.No:</lebal>
+            <input type="number" name="telephone"id ="telephone">
+
+            <lebal for="date">Date of Birth:</lebal>
+            <input type="date" name="date"id ="date">
+
+            <p ><h4>Gender:</h4></p> 
+            <lebal for="Male">Male</lebal>
+            <input type="radio" name="Gender"id ="Male" value = "Male" checked> <br>
+            <lebal for="Female">Female</lebal>
+            <input type="radio" name="Gender"id ="Female" value = "Female"> <br>
+            <lebal for="Other">Other</lebal>
+            <input type="radio" name="Gender"id ="Other" value = "Other"> <br><br>
+
+            <span><b>Country:</b></span>
+            <select name="country" id = "country">
+                
+                <option value ="Bharat">Bharat</option>
+                <option value ="USA">USA</option>
+                <option value ="South Africa">South Africa</option>
+                <option value ="UK">UK</option>
+                <option value ="Australia">Australia</option>
+
+
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+
+            <lebal for="state">State</lebal>
+            <input type="text" name="State"id ="state">
+            
+            <lebal for="city">City</lebal>
+            <select name="city" id="city" size="3" multiple>
+                <option>Surat</option>
+                <option>Anand</option>
+                <option>Ahemadabad</option>
+                <option>Vadodara</option>
+                <option>Gandhinagar</option>
+                <option>Gir Somanath</option>
+                <option>Bhavanagar</option>
+                <option>Jamanagar</option>
+                <option>Kutch</option>
+                <option>Valsad</option>
+                <option>Amreli</option>
+                <option>Mumbai</option>
+                <option>Pune</option>
+                <option>Jaypur</option>
+                <option>Haidrabad</option>
+                <option>Mosco</option>
+                <option>Lodon</option>
+            </select>
+
+            <lebal for="pin">Pin code:</lebal>
+            <input type="number" name="pin"id ="pin">
+        </fieldset>
+
+     <fieldset>
+     <legend> Other Information</legend>
+      
+     
+                       
+            <lebal for="terms">I agree with all terms and conditions:</lebal>
+            <input type="checkbox" name="terms"id ="terms" required>
+             
+    
+    </fieldset>
+    <input type="Submit" value="Submit" id="submit">
+    <input type="Reset" value="Reset" id="reset"> 
+    </form>
+</body>
+</html>
